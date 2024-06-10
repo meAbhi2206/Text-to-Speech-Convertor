@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url(//fonts.googleapis.com/css?family=Lato:300:400);
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  color: #fff;
+  z-index: 10;
+  overflow: hidden;
+}
+
+/* Responsive font sizing for hero heading */
+.hero h1 {
+  font-size: calc(2rem + 1vw); /* Adjust font size based on viewport width */
+  font-weight: 800;
+  margin-top: -50px;
+  margin-bottom: 20px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.hero h1 span {
+  color: #fff;
+}
+
+.card {
+  width: 90%; /* Make card width responsive */
+  max-width: 600px; /* Set a maximum width for larger screens */
+  height: 240px;
+  margin: 15px auto;
+  background-color: #24233b;
+  border-radius: 8px;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  background-color: rgba(36, 35, 59, 1);
+}
+
+.circle {
+  padding: 0 4px;
+}
+
+.circle2 {
+  display: inline-block;
+  align-items: center;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
+  border-radius: 5px;
+}
+
+.red {
+  background-color: #ff605c;
+}
+
+.yellow {
+  background-color: #ffbd44;
+}
+
+.green {
+  background-color: #00ca4e;
+}
+
+.header {
+  margin: 5px;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+
+#title2 {
+  color: white;
+  padding-left: 50px;
+  font-size: calc(0.8rem + 0.5vw); /* Adjust font size based on viewport width */
+}
+
+.code-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: calc(100% - 50px); /* Adjusted to fit within the card's height */
+  padding: 10px;
+}
+
+#code {
+  width: 100%; /* Make textarea width responsive */
+  height: 100%; /* Make textarea height responsive */
+  resize: none;
+  background-color: rgb(73, 70, 92);
+  border-radius: 5px;
+  border: none;
+  color: rgba(255, 255, 255, 0.775);
+  padding: 10px;
+  font-size: calc(0.8rem + 0.5vw); /* Adjust font size based on viewport width */
+}
+
+#code:focus {
+  outline: none !important;
+}
+
+textarea::placeholder {
+  color: #dddddd99;
+  font-size: calc(0.6rem + 0.3vw); /* Adjust font size based on viewport width */
+  font-family: "Poppins", sans-serif;
+}
+
+button {
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 35px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+  background: #1c2b47;
+}
+
+button,
+button span {
+  transition: 200ms;
+}
+
+button .text {
+  transform: translateX(35px);
+  color: rgba(255, 255, 255, 0.853);
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: calc(0.8rem + 0.3vw); /* Adjust font size based on viewport width */
+}
+
+button .material-symbols-outlined {
+  position: absolute;
+  border-left: 1px solid #403d84;
+  transform: translateX(110px);
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+button svg {
+  width: 15px;
+  fill: #eee;
+}
+
+button:hover {
+  background: #1c2b47;
+}
+
+button:hover .text {
+  color: transparent;
+}
+
+button:hover .material-symbols-outlined {
+  width: 150px;
+  border-left: none;
+  transform: translateX(0);
+}
+
+button:focus {
+  outline: none;
+}
+
+button:active .material-symbols-outlined svg {
+  transform: scale(0.8);
+}
+
+.row {
+  width: 90%; /* Make row width responsive */
+  max-width: 600px; /* Set a maximum width for larger screens */
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+button img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+select {
+  flex: 1;
+  height: 50px;
+  padding: 10px;
+  border: none;
+  border-radius: 35px;
+  outline: none;
+  background: #1c2b47;
+  color: #ffffffd3;
+  appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M7 10l5 5 5-5z"/></svg>');
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position-x: calc(100% - 20px);
+  background-position-y: 50%;
+  font-family: "Poppins", sans-serif;
+  font-size: calc(0.8rem + 0.3vw); /* Adjust font size based on viewport width */
+}
+
+select:hover {
+  background: #403d84;
+  color: #ddd;
+  background-image: url('data:image/svg+xml;utf8,<svg fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M7 10l5 5 5-5z"/></svg>');
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position-x: calc(100% - 20px);
+  background-position-y: 50%;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+body {
+  margin: 0;
+}
+
+.header {
+  position: relative;
+  text-align: center;
+  background: linear-gradient(60deg, rgb(227, 83, 76) 40%, rgb(168, 35, 76) 100%);
+  color: white;
+}
+
+.inner-header {
+  height: 80vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.waves {
+  position: relative;
+  width: 100%;
+  height: 10vh;
+  margin-bottom: -7px;
+  min-height: 100px;
+  max-height: 150px;
+}
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+
+/* responsive.css */
+@media (max-width: 768px) {
+  .waves {
+    height: 40px;
+    min-height: 40px;
+  }
+
+  .content {
+    height: 30vh;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .hero h1 {
+    font-size: calc(1.5rem + 1vw); /* Adjust font size based on viewport width */
+  }
+
+  .card {
+    height: 200px;
+  }
+
+  #code {
+    font-size: calc(0.7rem + 0.3vw); /* Adjust font size based on viewport width */
+  }
+
+  button {
+    width: 120px;
+    height: 40px;
+  }
+
+  button .text {
+    transform: translateX(30px);
+    font-size: calc(0.6rem + 0.2vw); /* Adjust font size based on viewport width */
+  }
+
+  button .material-symbols-outlined {
+    transform: translateX(90px);
+    height: 30px;
+    width: 30px;
+  }
+
+  .row {
+    gap: 10px;
+  }
+
+  select {
+    height: 40px;
+    background-size: 20px;
+    background-position-x: calc(100% - 15px);
+    font-size: calc(0.7rem + 0.2vw); /* Adjust font size based on viewport width */
+  }
+
+  .waves {
+    height: 5vh;
+    min-height: 50px;
+    max-height: 75px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: calc(1rem + 1vw); /* Adjust font size based on viewport width */
+  }
+
+  .card {
+    height: 160px;
+  }
+
+  #code {
+    font-size: calc(0.6rem + 0.2vw); /* Adjust font size based on viewport width */
+  }
+
+  button {
+    width: 100px;
+    height: 35px;
+  }
+
+  button .text {
+    transform: translateX(25px);
+    font-size: calc(0.5rem + 0.2vw); /* Adjust font size based on viewport width */
+  }
+
+  button .material-symbols-outlined {
+    transform: translateX(75px);
+    height: 25px;
+    width: 25px;
+  }
+
+  select {
+    height: 35px;
+    background-size: 15px;
+    background-position-x: calc(100% - 10px);
+    font-size: calc(0.6rem + 0.1vw); /* Adjust font size based on viewport width */
+  }
+}
+
+/* Additional Responsive Styles for Smaller Screens */
+@media (max-width: 375px) {
+  .hero h1 {
+    font-size: calc(0.8rem + 0.5vw); /* Adjust font size based on viewport width */
+  }
+
+  .card {
+    height: 140px;
+  }
+
+  #code {
+    font-size: calc(0.5rem + 0.1vw); /* Adjust font size based on viewport width */
+  }
+
+  button {
+    width: 80px;
+    height: 30px;
+  }
+
+  button .text {
+    transform: translateX(20px);
+    font-size: calc(0.4rem + 0.1vw); /* Adjust font size based on viewport width */
+  }
+
+  button .material-symbols-outlined {
+    transform: translateX(60px);
+    height: 20px;
+    width: 20px;
+  }
+
+  select {
+    height: 30px;
+    background-size: 10px;
+    background-position-x: calc(100% - 5px);
+    font-size: calc(0.5rem + 0.1vw); /* Adjust font size based on viewport width */
+  }
+}
+
+/* Styles for Extra Small Screens (e.g., Mobile Phones) */
+@media (max-width: 320px) {
+  .hero h1 {
+    font-size: calc(0.6rem + 0.5vw); /* Adjust font size based on viewport width */
+  }
+
+  .card {
+    height: 120px;
+  }
+
+  #code {
+    font-size: calc(0.4rem + 0.1vw); /* Adjust font size based on viewport width */
+  }
+
+  button {
+    width: 70px;
+    height: 25px;
+  }
+
+  button .text {
+    transform: translateX(15px);
+    font-size: calc(0.3rem + 0.1vw); /* Adjust font size based on viewport width */
+  }
+
+  button .material-symbols-outlined {
+    transform: translateX(50px);
+    height: 15px;
+    width: 15px;
+  }
+
+  select {
+    height: 25px;
+    background-size: 8px;
+    background-position-x: calc(100% - 3px);
+    font-size: calc(0.4rem + 0.1vw); /* Adjust font size based on viewport width */
+  }
+}
