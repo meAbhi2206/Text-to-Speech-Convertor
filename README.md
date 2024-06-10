@@ -11,7 +11,7 @@ A simple Text-to-speech Converter, that converts written text into speech.
 ## Introduction
 The Text-to-Speech Converter is a web application that converts written text into spoken words. It is created using HTML, CSS, and JavaScript. This project aims to provide an easy-to-use interface for users to input text and listen to the spoken output.
 
-[![Watch the Video...](thumbnail.png)](preview.mp4)
+[![Watch the Video...](Thumbnail.png)](Preview.mp4)
 
 ## Features
 - Simple and intuitive user interface
